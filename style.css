@@ -1,0 +1,57 @@
+:root {
+  --grid-size: 4;
+  --tile-size: 75px;
+  --gap: 8px;
+  --primary-color: #2563eb;
+  --empty-color: #e2e8f0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8fafc;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), var(--tile-size));
+  grid-template-rows: repeat(var(--grid-size), var(--tile-size));
+  gap: var(--gap);
+  padding: var(--gap);
+  background-color: #cbd5e1;
+  border-radius: 12px;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.tile:hover {
+  background-color: #1d4ed8;
+}
+
+.tile.empty {
+  background-color: var(--empty-color);
+  cursor: default;
+}
