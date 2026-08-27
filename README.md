@@ -28,6 +28,6 @@ A completely random placement of 15 tiles on a 4x4 grid has a 50% chance of bein
 * **Logic:** Vanilla JavaScript (ES6+)
 
 ## 💻 Local Execution
-1. Clone the repository: `git clone https://github.com/yourusername/game-of-15-casestudy.git`
+1. Clone the repository: `git clone https://github.com/shreshth1005/game-of-15-casestudy.git`
 2. Navigate to the directory: `cd game-of-15-casestudy`
 3. Open `index.html` in any modern web browser to run the application. No local server or build tools are required.
